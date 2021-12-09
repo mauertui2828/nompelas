@@ -1,0 +1,9 @@
+while :
+do
+  if ping -c 1 circleci.com &> /dev/null
+  then
+    echo "Host online"
+    break
+  fi
+  sleep 5s
+done
